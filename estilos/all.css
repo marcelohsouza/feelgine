@@ -1,0 +1,124 @@
+@font-face {
+    font-family: '04b30';
+    src: url('../fontes/04b30.woff2') format('woff2'),
+         url('../fontes/04b30.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-principal:'Roboto Mono', monospace;
+    --cor-fundo: #1e1736;
+    --cor-prim: #f0a93e;
+    --cor-segun: #faba5a;
+    --cor-titulo: #423374;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #ebebeb, #c9cbcb) !important;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+    color: black;
+    background-image: linear-gradient(to top left, #1e1736, #302555, #423374, #523f8f);
+}
+
+.logo-container {
+    display: flex;
+    margin-left: 100px;
+}
+
+.logo-container .logo {
+    display: flex;
+    height: 100px;
+    width: 100px;
+}
+
+.nav {
+    display: flex;
+    gap: 50px;
+}
+
+.nav .navegacao {
+    display: flex;
+
+    text-decoration: none;
+    font-family: var(--font-principal);
+    color: white;
+
+    font-size: 1.2em;
+}
+
+.nav .navegacao:hover {
+    display: flex;
+
+    text-decoration: none;
+    font-family: var(--font-principal);
+
+    margin-bottom: -2px;
+    border-bottom: 2px solid var(--cor-segun);
+
+    text-shadow: 8px 4px 10px rgba(0, 0, 0, 0.200);
+}
+
+.jga-container {
+    display: flex;
+    margin-right: 80px;
+
+    background-color: var(--cor-fundo);
+    border-radius: 35px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.250);
+}
+
+.jga-container .jga {
+    display: flex;
+
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: var(--font-principal);
+    font-size: 1.1em;
+    color: white;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    display: flex;
+}
+
+section .titulo-container {
+    display: flex;
+    margin-top: 150px;
+    width: 100vw;
+    justify-content: center;
+}
+.titulo-container .linha {
+    display: flex;
+    width: 900px;
+    border-bottom: 2.5px solid var(--cor-titulo);
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.linha .titulo {
+    font-family: '04b30';
+    font-size: 4.5em;
+    color: #423374;
+}

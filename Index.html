@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="estilos/portrait.css">
     <link rel="stylesheet" href="estilos/landscape.css">
     <link rel="stylesheet" href="estilos/login.css">
+    <script src="index.js"></script>
     <link rel="shortcut icon" href="imagens/ícone menor.ico" type="image/x-icon">
     <link rel="preload" href="../fontes/04b30.woff2" as="font" type="font/woff2" crossorigin>
     <title>FEELGINE</title>
@@ -32,6 +33,37 @@
             <div class="titulo-container">
                 <div class="linha">
                     <h1 class="titulo">FEELGINE</h1>
+                </div>
+            </div>
+        </section>
+        <section class="carrossel">
+            <div class="slider">
+                <div class="slides">
+                    <!--Radio Buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <div class="slide first">
+                        <img src="imagens/screenshot marcelo.png" alt="imagem 1">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/luffy.jpg" alt="imagem 2">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/zoro.png" alt="imagem 3">
+                    </div>
+                    <!--Navigation auto-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+            
+                </div>
+                <div class="manual-navigation">
+                    <label for="radio1" id="radio1" class="manual-btn"></label>
+                    <label for="radio2" id="radio2" class="manual-btn"></label>
+                    <label for="radio3" id="radio3" class="manual-btn"></label>
                 </div>
             </div>
         </section>

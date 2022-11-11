@@ -32,7 +32,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    width: 100vw;
     height: 100px;
     color: black;
     background-image: linear-gradient(to top left, #1e1736, #302555, #423374, #523f8f);
@@ -46,8 +46,8 @@ header{
 
 .logo-container .logo{
     display: flex;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 }
 
 .nav {
@@ -100,9 +100,13 @@ section{
     display: flex;
 }
 
+section .conteudo-portrait{
+    display: none;
+}
+
 section .titulo-container{
     display: flex;
-    padding-top: 100px;
+    padding-top: 50px;
     width: 100vw;
     justify-content: center;
 }
@@ -118,104 +122,33 @@ section .titulo-container{
     font-size: 4.5em;
     color: #423374;
     text-shadow: 2.5px 2px 2.5px rgba(0, 0, 0, 0.25);
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
-.carrossel {
+#slider{
+    width: 800px;
+    height: 450px;
+    background: red;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 60px auto;
 }
 
-.slider{
-    margin-top: 100px;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-}
-
-.slides{
-    width: 400%;
-    height: 400%;
+.dots{
     display: flex;
-}
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 25%;
-    position: relative;
-}
-
-.slide img{
-    width: 800px;
-}
-
-.manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -1235px;
-    display: flex;
+    width: 100%;
+    align-items: center;
     justify-content: center;
+    gap: 20px;
+    margin-top: 400px;
+    padding: 20px auto;
 }
-.manual-btn{
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.507);
     cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 20px;
-}
-
-.manual-btn:hover{
-    background-color: #fff;
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-
-.navigation-auto div{
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 365px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 20px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #fff;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff;
 }
